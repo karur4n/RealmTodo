@@ -238,7 +238,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             // つまり NSUInteger 型でインデックス番号を渡せば RLMResults の中からそのインデックス番号のオブジェクトを取ってきてくれる
             // UInteger は負数を取らない。インデックス番号も負数になることはないのでそうしているのかな
             let todoItem = todos.objectAtIndex(UInt(indexPath.row)) as! ToDoItem
-            // NSMUtableAttributedString っていうのはいろいろ装飾できる String クラスだそう
+            // NSMutableAttributedString っていうのはいろいろ装飾できる String クラスだそう
             // このアプリでは finished した Todo に打ち消し線を入れていて、そのために使う
             var attributedText = NSMutableAttributedString(string: todoItem.name)
             // addAttribute で装飾を加える
