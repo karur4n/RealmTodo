@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // 起動後に実行される
     // application 引数: UIApllication はシングルトンで、アプリ全体で同じ application 変数
     // didFinishLaunchingOptions 引数: アプリがどのように起動したかを辞書型で持つ
-    //   どのよう起動とは、シンプルにホーム画面からアイコンタップか、通知から起動したか、とかとか
+    //   どのように起動したかとは、シンプルにホーム画面からアイコンタップか、通知から起動したか、とかとか
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
         // UIWindow を生成
