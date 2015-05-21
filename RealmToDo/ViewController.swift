@@ -288,7 +288,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         default:
             break
         }
-        
 
         // Realm データベースにアクセスするためのオブジェクトを生成
         let realm = RLMRealm.defaultRealm()
@@ -299,7 +298,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // そのブロックがすべてが問題なく実行されたことを保証するもの
         realm.transactionWithBlock() {
             // todoと finished のトグル
-            // todo!.finished の逆、true なら false, false なら true が入ってるってこと
+            // todo!.finished の逆、true なら false, false なら true を代入するってこと
             todoItem?.finished = !todoItem!.finished
         }
         
