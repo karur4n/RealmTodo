@@ -58,7 +58,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // URL リソースっていうものがどういうのか分からないけど、例外的な場合以外は true を返せばよい
         return true
         
-        // 45 行目で使われている ViewController() を見に行く
+        // 46 行目で使われている ViewController() を見に行く
         // ViewController.swift へジャンプ
     }
 
