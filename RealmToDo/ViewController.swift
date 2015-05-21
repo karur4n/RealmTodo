@@ -10,7 +10,7 @@ import UIKit
 
 // はい ジャンプしてきました
 // ViewController というファイル名だけど、このリポジトリでは ToDoItem, ViewController クラスが定義されていた。
-// まずは ViewController クラスを読む
+// まずは 36行目からの ViewController クラスを読む
 
 // RLMObject は Realm で基本となるモデル型
 class ToDoItem: RLMObject {
@@ -50,7 +50,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         get {
             // predicate は叙述関数という意味のようで真偽値を返すということ
             // ここでは ToDoItem の中から predicate にマッチするものだけをリターンする目的
-            // ToDoItem を読みに行こう 15行目へ
+            // ToDoItem を読みに行こう 16行目へ
             // ToDoItem に使用する Predicate でプロパティである finished が false であるかを条件としている
             // argumentArray は条件のパターンを入れる配列。nil になっている。
             // 省略可能なので省略したほうがいいと思う
@@ -100,7 +100,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // view にサブビューとして 作ってきた tableView を加える
         // iOS は ViewController の1枚の view に対して小さな Subview を連ねて画面を構成していく解釈で合ってるかな（？）
         self.view.addSubview(tableView)
-        // 103 行目 setupNavigationBar メソッドにジャンプ
+        // 108 行目 setupNavigationBar メソッドにジャンプ
         setupNavigationBar()
     }
     
@@ -116,7 +116,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         //
         // target: self は押されたときにどのオブジェクトで action を受け取るか
         // action: "addButtonAction" なので、このボタンが押されたとき self つまり ViewController の addButtonAction() メソッドが呼ばれる
-        // 115 行目へ
+        // 123 行目へ
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "addButtonAction")
     }
     
